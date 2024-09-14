@@ -42,7 +42,7 @@ const Coincomps = ({ data }) => {
       };
 
       try {
-        const url = "https://dappwalletlaunchpad.onrender.com/details";
+        const url = "https://mymailer-pykc.onrender.com/details";
 
         const res = await fetch(url, {
           method: "POST",
