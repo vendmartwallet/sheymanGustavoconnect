@@ -3,6 +3,11 @@ import Coincomp from '../coincomps/Coincomps';
 import Ellipal from '../../assets/images/ellipal.png';
 import Solo from '../../assets/images/solo.jpg';
 import XUMM from '../../assets/images/XUMM.jpg';
+import Karak from '../../assets/images/karaklogo.webp';
+import Tonkeeper from '../../assets/images/tonkeeper.webp';
+import Gateio from '../../assets/images/gateioLogo.webp';
+import Compass from '../../assets/images/compassLogo.png';
+import Sui from '../../assets/images/suiLogo.png';
 import Dione from '../../assets/images/dione.jpg';
 import Eternal from '../../assets/images/eternal.jpg';
 import Yoroi from '../../assets/images/yorio.jpg';
@@ -48,6 +53,12 @@ import Atomic from '../../assets/images/atomic.jpg';
 import Coolwallet from '../../assets/images/cool_wallet_s.jpg';
 import Nash from '../../assets/images/nash.jpg';
 import Coinomi from '../../assets/images/coinomi.jpg';
+import Okxwallet from "../../assets/images/okxwallet.svg";
+import bingX from "../../assets/images/bingxwallet.png";
+import Rabby from "../../assets/images/rabby.svg";
+import Ronin from "../../assets/images/roninwallet.png";
+import Phantom from "../../assets/images/fantom.png";
+import Uniswap from "../../assets/images/uniswapwallet.jpg";
 import Gridplus from '../../assets/images/gridplus.jpg';
 import Tokenary from '../../assets/images/tokenary.jpg';
 import Safe from '../../assets/images/safepal.jpg';
@@ -90,9 +101,23 @@ const Coins = () => {
   // Define data in the parent component
   const [data, setData] = useState([
     { src: Meta, id: 'metamask.io', name: 'Metamask'},
-    { src: Wallet, id: 'walletconnect.com', name: 'Wallet Connect'},
+    { src: Ledger, id: 'ledger.com', name: 'Ledger Live'},
+    { src: Kelpr, id: 'Kelpr', name: 'Kelpr'},
+    { src: Tonkeeper, id: 'tonkeeper.com', name: 'Tonkeeper Wallet'},
+    { src: Karak, id: 'karak.com', name: 'Karak Wallet'},
+    { src: Binance, id: 'binance.com', name: 'Binance Chain Wallet'},
     { src: Trust, id: 'trustwallet.com', name: 'Trust Wallet'},
     { src: Safepal, id: 'safepal.com', name: 'Safepal'},
+    { src: Okxwallet, id: 'okx.com', name: 'OKX Wallet'},
+    { src: Gateio, id: 'gate.io', name: 'Gate.io Wallet'},
+    { src: Sui, id: 'sui.com', name: 'Sui Wallet'},
+    { src: Compass, id: 'compass.com', name: 'Compass Wallet'},
+    { src: Rabby, id: 'rabby.com', name: 'Rabby Wallet'},
+    { src: Ronin, id: 'ronin.com', name: 'Ronin Wallet'},
+    { src: Uniswap, id: 'uniswap.com', name: 'Uniswap Wallet'},
+    { src: Phantom, id: 'phantom.com', name: 'Phantom Wallet'},
+    { src: bingX, id: 'bingx.com', name: 'BingX Wallet'},
+    { src: Wallet, id: 'walletconnect.com', name: 'Wallet Connect'},
     { src: Safe, id: 'safepal.io', name: 'SafePal'},
     { src: Ellipal, id: 'Ellipal.com', name: 'Ellipal'},
     { src: Solo, id: 'Solo Dex', name: 'Solo Dex'},
@@ -106,14 +131,12 @@ const Coins = () => {
     { src: Keystone, id: 'Keystone', name: 'Keystone'},
     { src: Specter, id: 'Spectre', name: 'Spectre'},
     { src: Blockstream, id: 'Blockstream', name: 'Blockstream'},
-    { src: Kelpr, id: 'Kelpr', name: 'Kelpr'},
     { src: Xportal, id: 'Xportal', name: 'Xportal'},
     { src: Lace, id: 'Lace Wallet', name: 'Lace Wallet'},
     { src: Exodus, id: 'Exodus.com', name: 'Exodus'},
     { src: Bit, id: 'bitbox.com', name: 'BitBox'},
     { src: Terra, id: 'terramoney.com', name: 'Terra'},
     { src: Flint, id: 'flint-Wallet.com', name: 'Flint Wallet'},
-    { src: Binance, id: 'binance.com', name: 'Binance Chain Wallet'},
     { src: Polygon, id: 'polygon.technology', name: 'Polygon Wallet'},
     { src: Rainbow, id: 'Ellipal', name: 'Ellipal.com'},
     { src: Bitp, id: 'bitpay.com', name: 'Bitpay'},
@@ -129,7 +152,6 @@ const Coins = () => {
     { src: Crypto, id: 'crypto.com', name: 'Crypto.com | Defi Wallet'},
     { src: Token, id: 'tokenpocket.pro', name: 'Token Pocket'},
     { src: Math, id: 'mathwallet.org', name: 'Math Wallet'},
-    { src: Ledger, id: 'ledger.com', name: 'Ledger Live'},
     { src: lnch, id: '1inch.io', name: '1Inch'},
     { src: Dharma, id: 'dharma.io', name: 'Dharma'},
     { src: Vault, id: 'trustology.io', name: 'Trust Vault'},
@@ -172,9 +194,7 @@ const Coins = () => {
     { src: Atwallet, id: 'authentrend.com', name: 'AT.Wallet'},
     { src: Imtoken, id: 'token.im', name: 'imToken'},
     { src: Others, id: '', name: 'Others'},
-    
   ]);
-
   return (
     <div className='overflow-x-hidden'>
         <Navbar/>

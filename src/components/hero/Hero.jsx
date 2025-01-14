@@ -33,6 +33,10 @@ const Hero = () => {
               <ButtonProps title="Airdrop" />
             </div>
             <div className=" flex items-center gap-2">
+              <ButtonProps title="Delegate" />
+              <ButtonProps title="Undelegate" />
+            </div>
+            <div className=" flex items-center gap-2">
               <ButtonProps title="Whitelist" />
               <ButtonProps title="KYC" />
             </div>
